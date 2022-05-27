@@ -1,8 +1,9 @@
-﻿using Entities.Concrete;
+﻿using Core.DataAccess;
+using Entities.Concrete;
 
 namespace DataAccess.Abstarct
 {
-    public  interface ICategoryDal : IEntitiyRepository<Category>
+    public  interface ICategoryDal : IEntityRepository<Category>
     {
      
 

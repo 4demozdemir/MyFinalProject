@@ -8,7 +8,7 @@ namespace ConsoleUI
     class Program
     {
         static void Main(string[] args)
-        {// 27.05.2022
+        {
             ProductManager productManager = new ProductManager(new EfProductDal());
             foreach (var product in productManager.GetByUnitPrice(50,100) )
             {  

@@ -1,7 +1,9 @@
-﻿using Entities.Concrete;
+﻿using Core.DataAccess;
+using Entities.Concrete;
 namespace DataAccess.Abstarct
 {
-    public interface IProductDal :IEntitiyRepository<Product>
+    public interface IProductDal :IEntityRepository<Product>
     {
+
     }
 }

@@ -1,4 +1,4 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,10 +6,10 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Abstarct
+namespace Core.DataAccess
 {
-    //                                  Only Entity classes can be given
-    public interface IEntitiyRepository<T> where T:class,IEntity
+    //  Only Entity classes can be given
+    public interface IEntityRepository<T> where T:class,IEntity,new()
     {
         List<T> GetAll(Expression<Func<T,bool>> filter =null);
         T Get(Expression<Func<T, bool>> filter);
